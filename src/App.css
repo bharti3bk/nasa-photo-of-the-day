@@ -50,13 +50,16 @@
   border-top: 3px dotted black;
   font-weight: bold;
   widows: 50px;
+}  
+
+#displayCard {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .App-link {
   color: #61dafb;
 }  
-
-
 
 @keyframes App-logo-spin {
   from {
