@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="App">
       <NasaParentComponent />
-      <NasaProjectTimeLine >
        <NasaProjectTimeLine />
-      </NasaProjectTimeLine>
+       <NasaProjectTimeLine />
+      
     </div>
   );
 }
