@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import {NasaParentComponent} from './Components/NasaParentComponent';
+import NasaParentComponent from './Components/NasaParentComponent';
 
 function App() {
   return (
     <div className="App">
-     return <NasaParentComponent />
+      <NasaParentComponent />
     </div>
   );
 }

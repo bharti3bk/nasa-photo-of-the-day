@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { NasaChild } from './NasaChildComponents';
+import  NasaChild  from './NasaChildComponents';
 import axios from 'axios';
 
-function NasaParentComponent () {
+ function NasaParentComponent () {
     const [info, setInfo] = useState({})
 
+   
     useEffect(() => {
-        axios.get('https://api.nasa.gov/planetary/apod?api_key=A4VLWyldR2X1z5WyknQp2Zq54D4nJ1Dc5NOb6maH')
+        axios.get('https://api.nasa.gov/planetary/apod?api_key=CZRXl8NBiXnCC2p1Wega2rxSbeAtYJQkEXfH3nk4')
             .then(res => {
                 const getAnswer = res.data;
                 setInfo(getAnswer)
@@ -17,8 +18,9 @@ function NasaParentComponent () {
                   console.log(error)
                  })
     }, []);
+    console.log(info)
 
-    return (
+    return ( 
         <div>
             <NasaChild
             date={info.date} 
@@ -26,7 +28,6 @@ function NasaParentComponent () {
             url={info.url} 
             title={info.title}
              media_type={info.media_type} />
-            {}
         </div>
     )
 }
