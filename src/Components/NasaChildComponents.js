@@ -11,9 +11,7 @@ import React from 'react';
             <h1>{props.title}</h1>
             <p>{props.date}</p>
             <p>{props.explanation}</p>
-            <video width="400" controls>
-                <source src={props.url} type={props.media_type} />
-            </video>
+            <img alt = "nasaImg" width= "70%" src={props.url} type={props.media_type}/>
         </div>
 
     )
